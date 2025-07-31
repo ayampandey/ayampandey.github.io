@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayam Pandey | Legal Tech & AI Specialist</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Ayam Pandey's personal portfolio, showcasing projects and experience at the intersection of law, data science, and AI. Specializing in legal tech, contract automation, and NLP for law.">
+    <meta name="keywords" content="Ayam Pandey, legal tech, AI in law, contract automation, data science, NLP for law, LL.M., legal innovation, AI contract analysis, legal AI, law and technology">
+    <meta name="author" content="Ayam Pandey">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter (Added font weight 900 for font-black) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .section-title {
+            /* Changed font-extrabold to font-black for maximum boldness */
+            @apply text-4xl md:text-6xl font-black text-slate-900 mb-16 text-center;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl;
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header & Navbar -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-slate-800">Ayam Pandey</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-slate-600 hover:text-indigo-600 transition-colors">About</a>
+                <a href="#projects" class="text-slate-600 hover:text-indigo-600 transition-colors">Projects</a>
+                <a href="#experience" class="text-slate-600 hover:text-indigo-600 transition-colors">Experience</a>
+                <a href="#contact" class="text-slate-600 hover:text-indigo-600 transition-colors">Contact</a>
+            </div>
+            <a href="Ayam_Pandey_Resume.pdf" download="Ayam_Pandey_Resume.pdf" class="hidden md:inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-indigo-700 transition-colors">
+                Download Resume
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-slate-600 hover:text-indigo-600">About</a>
+            <a href="#projects" class="block py-2 text-slate-600 hover:text-indigo-600">Projects</a>
+            <a href="#experience" class="block py-2 text-slate-600 hover:text-indigo-600">Experience</a>
+            <a href="#contact" class="block py-2 text-slate-600 hover:text-indigo-600">Contact</a>
+            <a href="Ayam_Pandey_Resume.pdf" download="Ayam_Pandey_Resume.pdf" class="block mt-2 text-center bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-indigo-700">Download Resume</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Landing Page Section -->
+        <section id="home" class="min-h-[calc(100vh-80px)] flex items-center bg-slate-100">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-800 leading-tight">
+                    Ayam Pandey
+                </h1>
+                <p class="mt-4 text-lg md:text-2xl text-indigo-600 font-semibold">
+                    “Building Legal AI Tools to Reshape the Future of Law”
+                </p>
+                <a href="#projects" class="mt-8 inline-block bg-indigo-600 text-white px-8 py-4 rounded-lg shadow-lg text-lg font-medium hover:bg-indigo-700 transform hover:-translate-y-1 transition-all duration-300">
+                    Explore My Work
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About Me</h2>
+                <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-2/3 text-lg text-slate-600 space-y-4">
+                        <p>
+                            I am a final-year student pursuing an integrated B.Sc. in Data Science and LL.B. (Hons.), passionate about the intersection of law, technology, and business. My work focuses on leveraging AI and data science to build innovative legal tech solutions.
+                        </p>
+                        <p>
+                            With a strong interest in legal innovation, AI-driven contract analysis, and regulatory automation, I am dedicated to developing tools that enhance efficiency, accuracy, and access to justice in the legal industry.
+                        </p>
+                    </div>
+                    <div class="md:w-1/3 w-full bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <h3 class="text-xl font-semibold text-slate-800 mb-4">Education</h3>
+                        <div class="space-y-3">
+                            <div>
+                                <h4 class="font-bold text-slate-700">B.Sc. Data Science + LL.B. (Hons.)</h4>
+                                <p class="text-slate-500">National Forensic Sciences University, Gandhinagar</p>
+                                <p class="text-slate-500 font-medium">CGPA: 8.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Projects</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="card">
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Legal AI Toolkit – Contract Automation</h3>
+                            <p class="text-base text-slate-600 mb-4">An automated system for generating and analyzing legal contracts, streamlining the drafting process for legal professionals.</p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+                                <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Flask</span>
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">LangChain</span>
+                            </div>
+                            <a href="https://github.com/ayampandey" target="_blank" class="font-medium text-indigo-600 hover:text-indigo-800">GitHub Repository &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="card">
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">AI Contract Analyzer – Clause Extraction</h3>
+                            <p class="text-base text-slate-600 mb-4">Utilizes BERT-based NLP models to automatically identify and extract key clauses and provisions from complex legal documents.</p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+                                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">BERT</span>
+                                <span class="inline-block bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">NLP</span>
+                            </div>
+                            <a href="https://github.com/ayampandey" target="_blank" class="font-medium text-indigo-600 hover:text-indigo-800">GitHub Repository &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="card">
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Judgment Prediction – Plaintiff vs. Defendant</h3>
+                            <p class="text-base text-slate-600 mb-4">A machine learning model trained on historical court judgments to predict potential litigation outcomes.</p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+                                <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Scikit-learn</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Pandas</span>
+                            </div>
+                            <a href="https://github.com/ayampandey" target="_blank" class="font-medium text-indigo-600 hover:text-indigo-800">GitHub Repository &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 4 (New) -->
+                    <div class="card">
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">AI Powered Case Analyzer</h3>
+                            <p class="text-base text-slate-600 mb-4">Provides a brief summary, case analysis, and identifies trends from legal documents. Currently under development.</p>
+                            <div class="mb-4">
+                               <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+                               <span class="inline-block bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">NLP</span>
+                               <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Machine Learning</span>
+                            </div>
+                            <span class="text-sm text-slate-400">GitHub coming soon</span>
+                        </div>
+                    </div>
+                     <!-- Project Card 5 (Optional) -->
+                    <div class="card">
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">AML Checker – Anti-Money Laundering System</h3>
+                            <p class="text-base text-slate-600 mb-4">A proof-of-concept tool to flag suspicious entities and transaction patterns using a hybrid of rule-based and ML models.</p>
+                            <div class="mb-4">
+                               <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+                               <span class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Rule-Based Systems</span>
+                            </div>
+                            <span class="text-sm text-slate-400">GitHub coming soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Experience</h2>
+                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+                    <!-- Experience Card -->
+                    <div class="card flex">
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-slate-800">Khaitan & Co.</h3>
+                            <p class="text-sm font-medium text-indigo-600 mb-2">Digital & Innovation Team Intern</p>
+                            <ul class="list-disc list-inside text-slate-600 space-y-1">
+                                <li>Engineered prompts for generative AI applications.</li>
+                                <li>Built and managed clause libraries from contracts.</li>
+                                <li>Evaluated and refined LLM outputs for legal accuracy.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Experience Card -->
+                    <div class="card flex">
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-slate-800">Latham & Watkins</h3>
+                            <p class="text-sm font-medium text-indigo-600 mb-2">M&A Intern</p>
+                            <ul class="list-disc list-inside text-slate-600 space-y-1">
+                                <li>Analyzed legal documents in M&A transaction simulations.</li>
+                                <li>Identified key clauses for inclusion in agreements.</li>
+                                <li>Gained exposure to international law firm workflows.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Experience Card -->
+                    <div class="card flex">
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-slate-800">Clifford Chance</h3>
+                            <p class="text-sm font-medium text-indigo-600 mb-2">Cybersecurity Legal Intern</p>
+                            <ul class="list-disc list-inside text-slate-600 space-y-1">
+                                <li>Researched legal issues related to cybersecurity incidents.</li>
+                                <li>Assessed legal situations involving data breaches.</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- Experience Card -->
+                    <div class="card flex">
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-slate-800">SIDBI</h3>
+                            <p class="text-sm font-medium text-indigo-600 mb-2">Legal + Financial Forensics Intern</p>
+                            <ul class="list-disc list-inside text-slate-600 space-y-1">
+                                <li>Conducted forensic examinations of financial documents.</li>
+                                <li>Analyzed audit reports for a working capital facility.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Experience Card -->
+                    <div class="card flex">
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-slate-800">Judicial Training & Research Institute (JTRI)</h3>
+                            <p class="text-sm font-medium text-indigo-600 mb-2">Legal Intern</p>
+                            <ul class="list-disc list-inside text-slate-600 space-y-1">
+                                <li>Conducted legal research under senior professional guidance.</li>
+                                <li>Analyzed legal concepts and precedents.</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- Experience Card -->
+                    <div class="card flex">
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-slate-800">Rajasthan Human Rights Commission</h3>
+                            <p class="text-sm font-medium text-indigo-600 mb-2">Summer Legal Intern</p>
+                            <ul class="list-disc list-inside text-slate-600 space-y-1">
+                                <li>Conducted field documentation and legal research.</li>
+                                <li>Focused on human rights statutes and cases.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-slate-800 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <p class="max-w-2xl mx-auto mb-8 text-slate-300">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of an innovative team.
+                </p>
+                <div class="flex justify-center items-center space-x-6">
+                    <a href="mailto:pandeyayam@outlook.com" class="text-slate-300 hover:text-indigo-400 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <span class="sr-only">Email</span>
+                    </a>
+                    <a href="https://github.com/ayampandey" target="_blank" class="text-slate-300 hover:text-indigo-400 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ayampandey/" target="_blank" class="text-slate-300 hover:text-indigo-400 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ayam Pandey. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
