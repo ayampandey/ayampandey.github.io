@@ -5,8 +5,8 @@ Items that need confirmation before this redesign is merged and published. Nothi
 ## Must resolve before publishing
 
 - [ ] **GitHub Pages source.** In *Settings → Pages*, switch *Source* from "Deploy from a branch" to **"GitHub Actions"**. The new root `index.html` is a Vite entry point; if Pages keeps serving `main` directly, the live site will render blank. The workflow in `.github/workflows/deploy.yml` only runs on pushes to `main` (or manually).
-- [ ] **Primary CV.** Every CV link on the site (nav, hero, contact and the no-JavaScript fallback) points to **`/Ayam_Pandey_Resume.pdf`**, which is the file `public/Ayam_Pandey_Resume.pdf`. That path is set in one place: `site.links.resume` in `src/data/site.ts`. The current file came from the old repository and is out of date: it says "final-year student" and lists Aluma Solutions and Legal+AI as "Current". Replace it with your latest Legal Technology CV using the same filename (or a new filename plus an update to `site.links.resume`).
-- [ ] **Obsolete CV still published.** `public/Ayam_Pandey_CV.pdf` is not linked anywhere on the new site, but it is still served at `/Ayam_Pandey_CV.pdf` because the old site's mobile menu linked to it. Once the new CV is in place, either delete it or overwrite it with the same current CV so that old links never reach an outdated document.
+- [x] **Primary CV updated.** All CV links (nav, hero, contact and no-JavaScript fallback) point to **`/Ayam_Pandey_Resume.pdf`**, served from `public/Ayam_Pandey_Resume.pdf`. The updated CV was added before the redesign was committed.
+- [x] **Legacy CV URL updated.** `public/Ayam_Pandey_CV.pdf` is not linked on the new site, but remains available at its previous URL for old links. It is byte-for-byte identical to the updated `public/Ayam_Pandey_Resume.pdf`.
 
 ## Experience
 
